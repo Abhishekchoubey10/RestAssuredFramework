@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Pet Store Test Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="api.utilities.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="Pet Store RestAssured Framework(failed)" verbose="4">
+    <classes>
+      <class name="api.test.UserPropertiesTest">
+        <methods>
+          <include name="testGetUser"/>
+          <include name="testUpdateUser"/>
+          <include name="setUp"/>
+          <include name="testCreateUser"/>
+          <include name="testDeleteUser"/>
+        </methods>
+      </class> <!-- api.test.UserPropertiesTest -->
+    </classes>
+  </test> <!-- Pet Store RestAssured Framework(failed) -->
+</suite> <!-- Failed suite [Pet Store Test Suite] -->

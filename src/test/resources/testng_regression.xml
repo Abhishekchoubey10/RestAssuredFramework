@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Pet Store Test Suite" verbose="4"
+	thread-count="4" parallel="tests">
+
+	<listeners>
+		<listener
+			class-name="api.utilities.ExtentReportListener" />
+	</listeners>
+
+	
+<!--	<test name="Pet Store RestAssured Framework">
+	    <classes>
+	        <class name ="api.test.DataDrivenTests" />
+	    </classes>
+	    
+	</test>
+	
+		<test name="Pet Store RestAssured Framework">
+	    <classes>
+	        <class name ="api.test.UserTest" />
+	    </classes>
+	    
+	</test> -->
+
+		<test name="Pet Store RestAssured Framework">
+	    <classes>
+	        <class name ="api.test.UserPropertiesTest" />
+	    </classes>
+	    
+	</test>
+
+</suite>
